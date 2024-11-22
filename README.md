@@ -1,4 +1,4 @@
-# STEPS: Sequential Probability Tensor Estimation for Text-to-Image Hard Prompt Search
+# STEPS: Sequential probability Tensor Estimation for text-to-tmage hard Prompt Search
 
 STEPS is an efficient framework for optimizing text prompts in text-to-image (T2I) generation through sequential probability tensor decomposition.
 
