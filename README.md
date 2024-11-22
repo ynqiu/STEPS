@@ -3,7 +3,23 @@
 STEPS is an efficient framework for optimizing text prompts in text-to-image (T2I) generation through sequential probability tensor decomposition.
 
 
-## Installation
+
+
+## Key Arguments
+
+STEPS provides several key parameters for optimization:
+
+- `alg`: The running algorithm
+- `prompt_len`: Length of the prompt sequence
+- `iter`: Number of optimization iterations
+- `rank`: Rank of tensor train decomposition
+- `top_n`: Number of candidates to reduce the sequentially increasing the memory
+- `sample_bs`: The maximum sampling size
+- `dataset_name`: The dataset to run the algorithm
+
+
+
+## Usage
 
 ### Requirements
 ```
@@ -25,22 +41,6 @@ tqdm==4.66.5
 transformers==4.23.1
 ```
 
-
-## Key Arguments
-
-STEPS provides several key parameters for optimization:
-
-- `alg`: The running algorithm
-- `prompt_len`: Length of the prompt sequence
-- `iter`: Number of optimization iterations
-- `rank`: Rank of tensor train decomposition
-- `top_n`: Number of candidates to reduce the sequentially increasing the memory
-- `sample_bs`: The maximum sampling size
-- `dataset_name`: The dataset to run the algorithm
-
-
-
-## Usage
 
 1. Install dependencies:
 ```
