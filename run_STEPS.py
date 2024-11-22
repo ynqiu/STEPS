@@ -232,7 +232,7 @@ def setup_parser():
     # Basic parameters
     parser.add_argument('--alg', type=str, default='td', help='Algorithm to run')
     parser.add_argument('--dataset_name', type=str, default='coco', help='Dataset name')
-    parser.add_argument('--num_images', type=int, default=1, help='Number of images to process (None for all images)')
+    parser.add_argument('--num_images', type=int, default=None, help='Number of images to process (None for all images)')
     parser.add_argument('--prompt_len', type=int, default=10, help='Prompt length')
     parser.add_argument('--seed', type=int, default=2024, help='Random seed')
 
@@ -244,7 +244,7 @@ def setup_parser():
                        default='../../clipmodel/CLIP-ViT-bigG/open_clip_pytorch_model.bin')
     
     # STEPS method specific parameters
-    parser.add_argument('--iter', type=int, default=1, help='Number of iterations')
+    parser.add_argument('--iter', type=int, default=200, help='Number of iterations')
     parser.add_argument('--sample_bs', type=int, default=1000, help='Sample batch size')
     parser.add_argument('--topk', type=int, default=64, help='Top k')
     parser.add_argument('--rank', type=int, default=10, help='rank r for STEPS')
